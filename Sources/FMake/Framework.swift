@@ -50,7 +50,7 @@ public func xbArchive(
   framework: String = "",
   platforms: [(Platform, excludedArchs: [Platform.Arch])],
   buildForDistribution: Bool = true,
-  enableBitCode: Bool = true,
+  enableBitCode: Bool = false,
   skipInstall: Bool = false,
   env: [String: String]? = nil
 ) throws {
@@ -76,7 +76,7 @@ public func xcxcf(dirPath: String,
                   scheme: String = "",
                   framework: String = "",
                   platforms: [(Platform, excludedArchs: [Platform.Arch])],
-                  enableBitCode: Bool = true,
+                  enableBitCode: Bool = false,
                   includeDSYMs: Bool = true
 ) throws {
   
